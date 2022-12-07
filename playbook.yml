@@ -1,0 +1,11 @@
+---
+- nmae: to store in git
+  hosts: group1
+  tasks:
+    - name: update system
+      apt:
+      update_cache: yes
+    - name: install git
+      apt:
+        name: git
+        state: latest
