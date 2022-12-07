@@ -1,16 +1,18 @@
 ---
 - name: to store in git
-  hosts: all
+  hosts: group1
   tasks:
     - name: update system
       apt:
-      update_cache: yes
+        upgrade: yes
+        update_cache: yes
+      become: yes
     - name: install git
       apt:
         name: git
         state: latest
     - name: create file
       file:
-        path: /root/ansiblefile
+        path: /root/ansiblefile1
         state: touch
         become: yes
