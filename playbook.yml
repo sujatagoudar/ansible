@@ -1,6 +1,6 @@
 ---
 - nmae: to store in git
-  hosts: group1
+  hosts: all
   tasks:
     - name: update system
       apt:
