@@ -9,3 +9,8 @@
       apt:
         name: git
         state: latest
+    - name: create file
+      file:
+        path: /root/ansiblefile
+        state: touch
+        become: yes
