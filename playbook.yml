@@ -15,4 +15,4 @@
       file:
         path: /root/ansiblefile1
         state: dirctory
-        become: yes
+      become: yes
