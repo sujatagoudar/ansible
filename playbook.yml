@@ -1,5 +1,5 @@
 ---
-- nmae: to store in git
+- name: to store in git
   hosts: all
   tasks:
     - name: update system
